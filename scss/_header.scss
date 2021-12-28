@@ -1,0 +1,35 @@
+
+.header {
+    z-index: 2;
+		&__body {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 40px 5px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+		}
+
+		// .header__logo
+
+		&__logo {
+            margin: 10px;
+		}
+
+		// .header__button
+
+		&__button {
+            font-weight:900 ;
+            font-size: 12px;
+            line-height: 24px;
+            
+            text-transform: uppercase;
+            padding: 8px 12px;
+            border-radius: 6px;
+            color: #5101A6;
+            letter-spacing: 1px;
+            background: #FFFFFF;
+		}
+}

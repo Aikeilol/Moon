@@ -1,0 +1,94 @@
+.main {
+    background: url(../img/Main/background.png) no-repeat;
+    height: 680px;
+    max-width: 100%;
+    padding-top: 198px;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 20% ;
+        left: 10%;
+        background: url(../img/Main/moon.png) no-repeat;
+        width: 100%;
+        height: 576px;
+        transform: translate(50%, 50%);
+        background-size: contain;
+    
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        max-width: 550px;
+    }
+
+
+    &__title {
+        font-family: "Montserrat";
+        font-size: 48px;
+        line-height: 56px;
+        margin-bottom: 50px;
+    }
+
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 50px;
+    }
+
+
+    &__button-container {
+        display: flex;
+        flex-direction: row;
+        max-width: 222px;
+        justify-content: space-between;
+    }
+
+
+    &__button-white {
+        width: 156px;
+        height: 48px;
+        color: #5101A6;
+        background: #FFFFFF;
+        border-radius: 6px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        font-size: 12px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+
+    &__button-purple {
+        background: #5101A6;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 52%;
+            transform: translate(-50%,-50%);
+            background: url(../img/Main/Vector.svg) no-repeat;
+            width: 8px;
+            height: 10px;
+            background-size: contain;
+        }
+        &::after{
+            content: '';
+            position: absolute;
+            top: 52%;
+            left: 49%;
+            transform: translate(-50%,-50%);
+            background: url(../img/Main/Vector3.png) no-repeat;
+            width: 22px;
+            height: 22px;
+            background-size: contain;
+        }
+    }
+}
+

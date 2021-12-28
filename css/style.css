@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  width: 100%;
+  color: white;
+  font-family: 'Roboto';
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.header {
+  z-index: 2;
+}
+
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header__logo {
+  margin: 10px;
+}
+
+.header__button {
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: #5101A6;
+  letter-spacing: 1px;
+  background: #FFFFFF;
+}
+
+.main {
+  background: url(../img/Main/background.png) no-repeat;
+  height: 680px;
+  max-width: 100%;
+  padding-top: 198px;
+  position: relative;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  background: url(../img/Main/moon.png) no-repeat;
+  width: 100%;
+  height: 576px;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  background-size: contain;
+}
+
+.main__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 550px;
+}
+
+.main__title {
+  font-family: "Montserrat";
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 50px;
+}
+
+.main__subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+.main__button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 222px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__button-white {
+  width: 156px;
+  height: 48px;
+  color: #5101A6;
+  background: #FFFFFF;
+  border-radius: 6px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.main__button-purple {
+  background: #5101A6;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.main__button-purple::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 52%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../img/Main/Vector.svg) no-repeat;
+  width: 8px;
+  height: 10px;
+  background-size: contain;
+}
+
+.main__button-purple::after {
+  content: '';
+  position: absolute;
+  top: 52%;
+  left: 49%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url(../img/Main/Vector3.png) no-repeat;
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+}
+
+.submain {
+  margin-top: 168px;
+  color: #200142;
+}
+
+.submain__title {
+  font-family: 'Montserrat';
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
