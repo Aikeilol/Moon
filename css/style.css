@@ -142,6 +142,7 @@ body {
   font-weight: 900;
   font-size: 12px;
   line-height: 24px;
+  margin-right: 5px;
   text-transform: uppercase;
   padding: 8px 12px;
   border-radius: 6px;
@@ -162,9 +163,9 @@ body {
   content: "";
   position: absolute;
   bottom: 20%;
-  left: 10%;
+  right: 20%;
   background: url(../img/Main/moon.png) no-repeat;
-  width: 100%;
+  width: 568px;
   height: 576px;
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
@@ -265,6 +266,166 @@ body {
   font-family: 'Montserrat';
   font-size: 40px;
   line-height: 48px;
+  text-align: center;
+}
+
+.submain__slider-header {
+  margin-top: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.submain__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: #200142;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.submain__tabs-item {
+  margin-right: 45px;
+  cursor: pointer;
+}
+
+.submain__tabs-item:last-child {
+  margin-right: 0px;
+}
+
+.submain__tabs-item-active {
+  color: #5101A6;
+  position: relative;
+}
+
+.submain__tabs-item-active::before {
+  content: '';
+  position: absolute;
+  bottom: 0%;
+  left: 0px;
+  width: 174px;
+  height: 2px;
+  background: #5101A6;
+}
+
+.submain__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.submain__navigation-item-left {
+  width: 48px;
+  height: 48px;
+  background: #F6F6FA;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.submain__navigation-item-left::before {
+  content: '';
+  background: url("../img/slider/Vector.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 12px;
+  height: 15px;
+}
+
+@media (max-width: 500px) {
+  .submain__navigation-item-left {
+    display: none;
+  }
+}
+
+.submain__navigation-item-right {
+  width: 48px;
+  height: 48px;
+  background: #F6F6FA;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+}
+
+.submain__navigation-item-right::before {
+  content: '';
+  background: url("../img/slider/Vector.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+          transform: translate(-50%, -50%) rotate(180deg);
+  width: 12px;
+  height: 15px;
+}
+
+@media (max-width: 500px) {
+  .submain__navigation-item-right {
+    display: none;
+  }
+}
+
+.submain__slider-img-wrapper {
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+.submain__slide-container {
+  max-width: 256px;
+}
+
+@media (max-width: 420px) {
+  .submain__slide-container {
+    margin: 0 auto;
+  }
+}
+
+.submain__slide-title {
+  font-family: 'Montserrat';
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.submain__slide-subtitle {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.swiper {
+  margin-top: 45px;
+  max-width: 1200px;
+  max-height: 340px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #200142 !important;
+  opacity: 1;
+}
+
+.swiper-pagination {
+  position: static !important;
+  margin-top: 20px;
+}
+
+.swiper-wrapper {
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

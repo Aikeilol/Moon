@@ -9,9 +9,9 @@
         content: "";
         position: absolute;
         bottom: 20% ;
-        left: 10%;
+        right: 20%;
         background: url(../img/Main/moon.png) no-repeat;
-        width: 100%;
+        width: 568px;
         height: 576px;
         transform: translate(50%, 50%);
         background-size: contain;
@@ -88,6 +88,7 @@
             width: 22px;
             height: 22px;
             background-size: contain;
+
         }
     }
 }
